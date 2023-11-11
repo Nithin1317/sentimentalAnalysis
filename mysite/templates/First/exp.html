@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+
+        .image-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+        }
+
+        .header-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            max-height: 200px; /* Set the max height as needed */
+            margin: 0 auto; /* Center the image */
+        }
+
+        .second-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            max-height: 200px; /* Set the max height as needed */
+            margin: 0 auto; /* Center the image */
+            margin-top: 20px; /* Add margin to separate the images */
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://huggingface.co/blog/assets/85_sentiment_analysis_twitter/thumbnail.png" alt="Header Image" class="header-image">
+        <img src="https://centricconsulting.com/wp-content/uploads/2022/08/Blog_DA_Sentiment_Customer_08052022.png" alt="Second Image" class="second-image">
+    </div>
+
+    <section>
+        <h1>Sentiment Analysis</h1>
+        <p>Understand the sentiment behind the text</p>
+
+        <h2>What is Sentiment Analysis?</h2>
+        <p>Sentiment Analysis, also known as opinion mining, is the use of natural language processing, text analysis, and machine learning to identify and extract subjective information from source materials.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>Accurate sentiment analysis</li>
+            <li>Easy-to-use interface</li>
+            <li>Quick results</li>
+            <li>Tweets of Twitter</li>
+        </ul>
+        <h2>About us</h2>
+        <p>The project uses a Twitter dataset from Kaggle to analyze sentiment in social media text data using a Naive Bayes classification algorithm. After training on the Twitter dataset, the model is imported into a Django project. The model is implemented using a web page built using Django, and its accuracy rate is 77%, offering a reasonable estimate of sentiment. This Django-based platform is a useful tool for users as it minimizes the time and effort needed for sentiment analysis in large volumes of social media material.</p>
+        <h2>Try it now!</h2>
+        <p>Experience the power of sentiment analysis. Simply enter the text you want to analyze and get instant results.</p>
+        <a href="http://127.0.0.1:8000/analysis/" class="cta-button">Try Now</a>
+    </section>
+</body>
+</html>
